@@ -1,0 +1,226 @@
+[
+  {
+    "id": "ai-escalation-reroute",
+    "lane": "AI governance and agent readiness",
+    "track": "AI_GOVERNANCE",
+    "action": "REROUTE",
+    "escalationTheme": "AI decisions are crossing too many committees before anyone owns the final call.",
+    "boardQuestion": "Which AI lane needs a tighter escalation path rather than another review layer?",
+    "owner": "Chief AI Officer",
+    "audience": "Board risk committee",
+    "escalationHeadline": "AI escalation paths are too deep for the current decision cadence.",
+    "handoffSignal": "The same AI packet keeps bouncing between governance, security, and legal before the final vote.",
+    "escalationOwner": "AI governance operations lead",
+    "requiredEvidence": [
+      "escalation chain map",
+      "owner-of-record log",
+      "reroute count by packet"
+    ],
+    "relatedSurfaces": [
+      "scorecard.kineticgain.com",
+      "memo.kineticgain.com",
+      "agents.kineticgain.com"
+    ],
+    "companyTags": [
+      "OpenAI",
+      "Anthropic",
+      "Microsoft"
+    ],
+    "decisionHandoffs": 5,
+    "unresolvedOwners": 2,
+    "rerouteDepth": 4,
+    "escalationCoverageScore": 54,
+    "decisionClarityScore": 58,
+    "boardConfidenceScore": 63,
+    "valueAtStakeMillions": 31,
+    "headline": "AI escalation paths are deeper than the current board rhythm can absorb.",
+    "nextMove": "Reroute AI escalation through one named owner and one committee handoff."
+  },
+  {
+    "id": "identity-owner-fix",
+    "lane": "Identity and access governance",
+    "track": "IDENTITY",
+    "action": "NAME_OWNER",
+    "escalationTheme": "Identity incidents are escalating quickly, but the final decision owner keeps shifting between audit and security.",
+    "boardQuestion": "Which trust lane needs a named escalation owner before another exception packet enters the queue?",
+    "owner": "Chief Information Security Officer",
+    "audience": "Audit committee",
+    "escalationHeadline": "Identity escalation coverage is being weakened by owner drift.",
+    "handoffSignal": "Access exceptions keep moving between security and audit without a stable final approver.",
+    "escalationOwner": "Identity governance director",
+    "requiredEvidence": [
+      "owner drift log",
+      "escalation-response map",
+      "committee approval chain"
+    ],
+    "relatedSurfaces": [
+      "certs.kineticgain.com",
+      "guest.kineticgain.com",
+      "protect.kineticgain.com"
+    ],
+    "companyTags": [
+      "Microsoft",
+      "Entra",
+      "Okta"
+    ],
+    "decisionHandoffs": 4,
+    "unresolvedOwners": 3,
+    "rerouteDepth": 3,
+    "escalationCoverageScore": 51,
+    "decisionClarityScore": 49,
+    "boardConfidenceScore": 52,
+    "valueAtStakeMillions": 19,
+    "headline": "Identity escalation is being slowed more by owner drift than by technical complexity.",
+    "nextMove": "Name one final escalation owner for identity exceptions before the next audit packet."
+  },
+  {
+    "id": "revenue-extra-review",
+    "lane": "Revenue systems and reporting",
+    "track": "REVENUE_SYSTEMS",
+    "action": "ADD_REVIEW",
+    "escalationTheme": "Revenue disputes are escalating into board-facing debates because the finance review layer arrives too late.",
+    "boardQuestion": "Which commercial lane needs an earlier escalation review so debates stop reopening after committee prep?",
+    "owner": "Chief Revenue Officer",
+    "audience": "Board finance committee",
+    "escalationHeadline": "Revenue escalations are entering finance review too late to prevent board churn.",
+    "handoffSignal": "Attribution and forecast disputes keep escalating after the packet has already hit the committee calendar.",
+    "escalationOwner": "Revenue systems lead",
+    "requiredEvidence": [
+      "review insertion timing",
+      "reopened packet log",
+      "committee debate duration"
+    ],
+    "relatedSurfaces": [
+      "powerbi.kineticgain.com",
+      "yield.kineticgain.com",
+      "martech.kineticgain.com"
+    ],
+    "companyTags": [
+      "Power BI",
+      "Tableau",
+      "VWO"
+    ],
+    "decisionHandoffs": 5,
+    "unresolvedOwners": 1,
+    "rerouteDepth": 4,
+    "escalationCoverageScore": 47,
+    "decisionClarityScore": 53,
+    "boardConfidenceScore": 48,
+    "valueAtStakeMillions": 27,
+    "headline": "Revenue escalation timing is too late to keep the finance packet stable.",
+    "nextMove": "Add a pre-committee review checkpoint for revenue escalations."
+  },
+  {
+    "id": "fintech-hold-scope",
+    "lane": "FinTech diligence and transaction controls",
+    "track": "FINTECH",
+    "action": "HOLD_SCOPE",
+    "escalationTheme": "FinTech decisions are rerouting through too many owners, and the board queue is carrying the ambiguity forward.",
+    "boardQuestion": "Which capital-sensitive lane should stop expanding until its escalation path becomes board-safe?",
+    "owner": "Chief Financial Officer",
+    "audience": "Investment committee",
+    "escalationHeadline": "FinTech escalation paths remain too ambiguous to absorb more scope safely.",
+    "handoffSignal": "Treasury, KYC, and merchant packets are waiting on different owners to reconcile the same risk call.",
+    "escalationOwner": "Finance transformation lead",
+    "requiredEvidence": [
+      "escalation chain age",
+      "owner resolution latency",
+      "duplicate decision path count"
+    ],
+    "relatedSurfaces": [
+      "payments.kineticgain.com",
+      "merchant.kineticgain.com",
+      "treasury.kineticgain.com",
+      "kyc.kineticgain.com"
+    ],
+    "companyTags": [
+      "Stripe",
+      "Adyen",
+      "Plaid"
+    ],
+    "decisionHandoffs": 6,
+    "unresolvedOwners": 3,
+    "rerouteDepth": 5,
+    "escalationCoverageScore": 43,
+    "decisionClarityScore": 45,
+    "boardConfidenceScore": 44,
+    "valueAtStakeMillions": 35,
+    "headline": "FinTech escalation ambiguity is now a board-safe scope limiter.",
+    "nextMove": "Hold new FinTech asks until one stable owner path clears."
+  },
+  {
+    "id": "procurement-reroute-strength",
+    "lane": "Procurement, trust, and buyer proof",
+    "track": "PROCUREMENT",
+    "action": "REROUTE",
+    "escalationTheme": "Procurement is healthy enough to model a cleaner escalation path for adjacent lanes.",
+    "boardQuestion": "Which lane can lend a working escalation pattern because its own handoffs are already disciplined?",
+    "owner": "Chief Commercial Officer",
+    "audience": "Board growth committee",
+    "escalationHeadline": "Procurement provides one of the cleanest escalation paths in the current board estate.",
+    "handoffSignal": "Buyer-proof exceptions clear quickly because the trust owner and commercial owner do not compete for the same call.",
+    "escalationOwner": "Trust center owner",
+    "requiredEvidence": [
+      "resolved handoff map",
+      "owner clarity score",
+      "reroute time by packet"
+    ],
+    "relatedSurfaces": [
+      "procurement.kineticgain.com",
+      "questionnaire.kineticgain.com",
+      "trust.kineticgain.com"
+    ],
+    "companyTags": [
+      "Vanta",
+      "Drata",
+      "Google"
+    ],
+    "decisionHandoffs": 2,
+    "unresolvedOwners": 0,
+    "rerouteDepth": 1,
+    "escalationCoverageScore": 86,
+    "decisionClarityScore": 84,
+    "boardConfidenceScore": 83,
+    "valueAtStakeMillions": 14,
+    "headline": "Procurement has the cleanest escalation path and can act as a reference lane.",
+    "nextMove": "Reuse the procurement escalation model in a more constrained board lane."
+  },
+  {
+    "id": "biotech-owner-reroute",
+    "lane": "Biotech and diagnostics control lanes",
+    "track": "BIOTECH",
+    "action": "NAME_OWNER",
+    "escalationTheme": "Regulated lanes are still rerouting between quality, compliance, and operations before anyone closes the final decision.",
+    "boardQuestion": "Which regulated lane needs a single escalation owner before the board expands another control surface?",
+    "owner": "Quality systems lead",
+    "audience": "Board compliance committee",
+    "escalationHeadline": "Biotech escalation paths are still too distributed across quality and compliance owners.",
+    "handoffSignal": "CAPA, specimen, and safety packets keep changing final owner as they cross committees.",
+    "escalationOwner": "GxP program manager",
+    "requiredEvidence": [
+      "owner change log",
+      "committee reroute map",
+      "regulated decision latency"
+    ],
+    "relatedSurfaces": [
+      "assay.kineticgain.com",
+      "capa.kineticgain.com",
+      "specimen.kineticgain.com",
+      "safety.kineticgain.com"
+    ],
+    "companyTags": [
+      "LabVantage",
+      "Veeva",
+      "Thermo Fisher"
+    ],
+    "decisionHandoffs": 5,
+    "unresolvedOwners": 2,
+    "rerouteDepth": 4,
+    "escalationCoverageScore": 46,
+    "decisionClarityScore": 48,
+    "boardConfidenceScore": 51,
+    "valueAtStakeMillions": 28,
+    "headline": "Biotech escalation ownership is still too fragmented for the current board cadence.",
+    "nextMove": "Name one final regulated escalation owner across the biotech decision path."
+  }
+]
