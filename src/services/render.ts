@@ -10,6 +10,7 @@ import {
 
 const productTitle = "Board Decision Escalation Map";
 const domain = "https://escalate-map.kineticgain.com";
+const repoUrl = "https://github.com/mizcausevic-dev/board-decision-escalation-map";
 
 function escapeHtml(value: string) {
   return value
@@ -104,6 +105,19 @@ function shell(title: string, path: string, body: string, description: string) {
       .grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
       .card h3 { margin: 12px 0 10px; font-size: 30px; line-height: 1.05; }
       .card p, li { color: var(--muted); line-height: 1.6; }
+      .proof-band {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .proof-card {
+        min-height: 100%;
+        border: 1px solid rgba(103, 224, 190, 0.16);
+        background:
+          linear-gradient(135deg, rgba(103, 224, 190, 0.08), transparent 42%),
+          rgba(16, 32, 50, 0.72);
+      }
+      .proof-card h3 { font-size: 24px; }
       .table-wrap { overflow-x: auto; }
       table { width: 100%; border-collapse: collapse; }
       th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(125, 196, 255, 0.12); vertical-align: top; }
@@ -134,13 +148,64 @@ function shell(title: string, path: string, body: string, description: string) {
       <div class="footer">
         <span>${productTitle}</span>
         <a href="${domain}">${domain.replace("https://", "")}</a>
-        <a href="https://github.com/mizcausevic-dev/">GitHub</a>
+        <a href="${repoUrl}">GitHub repo</a>
+        <a href="https://portfolio.kineticgain.com/">Portfolio</a>
+        <a href="https://suite.kineticgain.com/">Suite</a>
         <a href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
         <a href="https://kineticgain.com/">Kinetic Gain</a>
       </div>
     </div>
   </body>
 </html>`;
+}
+
+function productDepthSection() {
+  return `<section class="section">
+      <span class="eyebrow">Product depth</span>
+      <h2>Built as an escalation product, not a generic route table.</h2>
+      <p class="lede">This surface helps leadership teams see which decisions are getting bounced across committees, where ownership has gone soft, and which escalation path should be simplified before the next investor or board review.</p>
+      <div class="proof-band">
+        <article class="card proof-card">
+          <div class="chip">Buyer value</div>
+          <h3>Where governance drag is delaying action.</h3>
+          <p>CEOs, chiefs of staff, operating partners, and functional executives can see the decisions that need rerouting, owner assignment, added review coverage, or scope hold before another cycle is lost.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">Technical proof</div>
+          <h3>Escalation pressure is modeled and reproducible.</h3>
+          <p>The repo turns synthetic escalation records into scored lanes, handoff ledgers, intervention posture, JSON payloads, static routes, tests, and screenshot-ready proof.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">GTM story</div>
+          <h3>Board-readable operating decisions.</h3>
+          <p>Kinetic Gain translates committee friction, owner drift, and decision reroutes into a concise executive intelligence packet that non-technical buyers can scan quickly.</p>
+        </article>
+      </div>
+    </section>`;
+}
+
+function sharedPatternSection() {
+  return `<section class="section">
+      <span class="eyebrow">What these repos have in common</span>
+      <h2>One board question, one modeled dataset, one evidence packet.</h2>
+      <div class="proof-band">
+        <article class="card proof-card">
+          <div class="chip">Risk becomes legible</div>
+          <h3>Escalation loops stop hiding in meeting notes.</h3>
+          <p>Reroute depth, unresolved ownership, committee loops, evidence coverage, decision clarity, and confidence erosion become explicit operating signals.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">Ownership stays attached</div>
+          <h3>Every lane keeps its audience and next move.</h3>
+          <p>Each route keeps the accountable owner, board audience, required evidence, routing action, and safe next move visible.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">Proof is reusable</div>
+          <h3>HTML, JSON, fixtures, and tests agree.</h3>
+          <p>The generated public surface, API payload, fixture data, smoke checks, and README assets all describe the same escalation packet.</p>
+        </article>
+      </div>
+    </section>`;
 }
 
 function navLinks(path: string) {
@@ -207,7 +272,9 @@ export function renderOverview() {
     <section class="section">
       <h2>Board-visible escalation exposures</h2>
       <ul>${risks}</ul>
-    </section>`,
+    </section>
+    ${productDepthSection()}
+    ${sharedPatternSection()}`,
     "Board-ready escalation-mapping surface for committee handoffs, owner drift, decision reroutes, and board-visible intervention paths."
   );
 }
@@ -351,7 +418,9 @@ export function renderDocs() {
         <li><code>/api/payload</code> exposes the reproducible decision-escalation packet.</li>
       </ul>
       <pre>${escapeHtml(JSON.stringify(payload(), null, 2))}</pre>
-    </section>`,
+    </section>
+    ${productDepthSection()}
+    ${sharedPatternSection()}`,
     "Product documentation for Board Decision Escalation Map and its board-ready routes."
   );
 }
